@@ -1,0 +1,58 @@
+object FrmChooseLang: TFrmChooseLang
+  Left = 638
+  Top = 331
+  Width = 121
+  Height = 151
+  VertScrollBar.Range = 137
+  HorzScrollBar.Range = 113
+  ActiveControl = RadFr
+  BorderStyle = fbsDialog
+  Color = clBackground
+  Position = poDefault
+  Scaled = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 105
+    Height = 97
+    TabOrder = 0
+    object RadFr: TRadioButton
+      Left = 8
+      Top = 16
+      Width = 89
+      Height = 17
+      Caption = 'Fran'#231'ais'
+      Checked = True
+      TabOrder = 0
+    end
+    object RadEn: TRadioButton
+      Left = 8
+      Top = 40
+      Width = 89
+      Height = 17
+      Caption = 'English'
+      TabOrder = 1
+      TabStop = False
+    end
+    object RadEs: TRadioButton
+      Left = 8
+      Top = 64
+      Width = 89
+      Height = 17
+      Caption = 'Espanol'
+      TabOrder = 2
+      TabStop = False
+    end
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 112
+    Width = 105
+    Height = 25
+    Caption = 'OK'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end
